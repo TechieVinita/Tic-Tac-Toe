@@ -17,6 +17,7 @@ body{
 }
 
 h1{
+    font-size: 2rem;
     font-family: 'Salsa', cursive;
     text-align: center;
     margin-top: 20px;
@@ -24,10 +25,48 @@ h1{
     color: purple;
 }
 
-.game-board{
-    width: 500px;
-    height: 500px;
+.output{
+    font-size: 1.6rem;
+    font-family: 'Salsa', cursive;
 
-    border-radius: 20px;
-    border: 2px solid black;
+    color: black;
+    /* background-color: red; */
+
+    margin-bottom: 20px;
+}
+
+.game-board{
+    width: 335px;
+    height: 335px;
+
+    border: 2px solid gray;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(109px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(109px, 1fr));
+
+}
+
+.btn{
+    border: 1px solid gray;
+
+    font-size: 2.5rem;
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.buttons-container{
+    margin-top: 30px;
+}
+
+.restart{
+    border-radius: 5px;
+    border: 0px solid transparent;
+
+    color: white;
+    background-color: purple;
+    padding: 0.8rem;
 }
